@@ -60,17 +60,17 @@ namespace CapaDatos
                 SqlCommand SqlCmd = new SqlCommand();
                 SqlCmd.Connection = SqlCon;
                 SqlCmd.CommandType = CommandType.StoredProcedure;
-                SqlCmd.CommandText = "spinsertar_estado_civil";
+                SqlCmd.CommandText = "spinsertar_sexo";
 
                 //parametros
                 SqlParameter ParClave = new SqlParameter();
-                ParClave.ParameterName = "@clave";
+                ParClave.ParameterName = "@id_sexo";
                 ParClave.SqlDbType = SqlDbType.Int;
                 ParClave.Direction = ParameterDirection.Output;
                 SqlCmd.Parameters.Add(ParClave);
 
                 SqlParameter ParSexo = new SqlParameter();
-                ParSexo.ParameterName = "@estado_civil";
+                ParSexo.ParameterName = "@sexo";
                 ParSexo.SqlDbType = SqlDbType.VarChar;
                 ParSexo.Size = 50;
                 ParSexo.Value = sexo.Sexo;
@@ -97,7 +97,7 @@ namespace CapaDatos
 
         //metodo editar
 
-        public string Editar(DEstado_Civil Estado_Civil)
+        public string Editar(DSexo sexo)
         {
             string rpta = "";
             SqlConnection SqlCon = new SqlConnection();
@@ -109,21 +109,21 @@ namespace CapaDatos
                 SqlCommand SqlCmd = new SqlCommand();
                 SqlCmd.Connection = SqlCon;
                 SqlCmd.CommandType = CommandType.StoredProcedure;
-                SqlCmd.CommandText = "speditar_estado_civil";
+                SqlCmd.CommandText = "speditar_sexo";
 
                 //parametros
                 SqlParameter ParClave = new SqlParameter();
-                ParClave.ParameterName = "@clave";
+                ParClave.ParameterName = "@id_sexo";
                 ParClave.SqlDbType = SqlDbType.Int;
-                ParClave.Value = Estado_Civil.Clave;
+                ParClave.Value = sexo._Clave;
                 SqlCmd.Parameters.Add(ParClave);
 
-                SqlParameter ParEstado_Civil = new SqlParameter();
-                ParEstado_Civil.ParameterName = "@estado_civil";
-                ParEstado_Civil.SqlDbType = SqlDbType.VarChar;
-                ParEstado_Civil.Size = 50;
-                ParEstado_Civil.Value = Estado_Civil.Estado_Civil;
-                SqlCmd.Parameters.Add(ParEstado_Civil);
+                SqlParameter ParSexo = new SqlParameter();
+                ParSexo.ParameterName = "@sexo";
+                ParSexo.SqlDbType = SqlDbType.VarChar;
+                ParSexo.Size = 50;
+                ParSexo.Value = sexo._Sexo;
+                SqlCmd.Parameters.Add(ParSexo);
 
                 rpta = (SqlCmd.ExecuteNonQuery() == 1) ? "OK" : "HA FALLADO LA ACTUALIZACION DEL ESTADO CIVIL";
 
