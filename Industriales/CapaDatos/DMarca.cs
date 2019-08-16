@@ -121,14 +121,14 @@ namespace CapaDatos
                 SqlParameter ParIdMarca = new SqlParameter();
                 ParIdMarca.ParameterName = "@id_marca";
                 ParIdMarca.SqlDbType = SqlDbType.Int;
-                ParIdMarca.Value = marca._Id_marca;
+                ParIdMarca.Value = marca.Id_marca;
                 SqlCmd.Parameters.Add(ParIdMarca);
 
                 SqlParameter ParDenominacion = new SqlParameter();
                 ParDenominacion.ParameterName = "@denominacion";
                 ParDenominacion.SqlDbType = SqlDbType.VarChar;
                 ParDenominacion.Size = 50;
-                ParDenominacion.Value = marca._Denominacion;
+                ParDenominacion.Value = marca.Denominacion;
                 SqlCmd.Parameters.Add(ParDenominacion);
 
                 rpta = (SqlCmd.ExecuteNonQuery() == 1) ? "OK" : "HA FALLADO LA ACTUALIZACION DEL ESTADO CIVIL";
