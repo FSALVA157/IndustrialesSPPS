@@ -54,7 +54,7 @@ namespace CapaDatos
             SqlConnection SqlCon = new SqlConnection();
             try
             {
-                SqlCon.ConnectionString = Conexion.Cn;
+                SqlCon.ConnectionString = Conection.Cn;
                 SqlCon.Open();
 
                 SqlCommand SqlCmd = new SqlCommand();
