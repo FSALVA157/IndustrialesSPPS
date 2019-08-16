@@ -150,7 +150,6 @@ namespace CapaDatos
             return rpta;
         }
         //Fin editar
-
         
         #endregion metodos
     }
