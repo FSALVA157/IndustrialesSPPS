@@ -7,3 +7,10 @@ D:\GITHUB_PROYECTOS_2019\INDUSTRIALES\IndustrialesSPPS\Industriales\CapaNegocios
 D:\GITHUB_PROYECTOS_2019\INDUSTRIALES\IndustrialesSPPS\Industriales\CapaNegocios\obj\Debug\CapaNegocios.pdb
 D:\GITHUB_PROYECTOS_2019\INDUSTRIALES\IndustrialesSPPS\Industriales\CapaNegocios\bin\Debug\CapaNegocios.dll.CodeAnalysisLog.xml
 D:\GITHUB_PROYECTOS_2019\INDUSTRIALES\IndustrialesSPPS\Industriales\CapaNegocios\bin\Debug\CapaNegocios.dll.lastcodeanalysissucceeded
+D:\GITHUB_REPOSITORIOS_2019\IndustrialesSPPS\Industriales\CapaNegocios\bin\Debug\CapaNegocios.dll
+D:\GITHUB_REPOSITORIOS_2019\IndustrialesSPPS\Industriales\CapaNegocios\bin\Debug\CapaNegocios.pdb
+D:\GITHUB_REPOSITORIOS_2019\IndustrialesSPPS\Industriales\CapaNegocios\bin\Debug\CapaDatos.dll
+D:\GITHUB_REPOSITORIOS_2019\IndustrialesSPPS\Industriales\CapaNegocios\bin\Debug\CapaDatos.pdb
+D:\GITHUB_REPOSITORIOS_2019\IndustrialesSPPS\Industriales\CapaNegocios\obj\Debug\CapaNegocios.csprojResolveAssemblyReference.cache
+D:\GITHUB_REPOSITORIOS_2019\IndustrialesSPPS\Industriales\CapaNegocios\obj\Debug\CapaNegocios.dll
+D:\GITHUB_REPOSITORIOS_2019\IndustrialesSPPS\Industriales\CapaNegocios\obj\Debug\CapaNegocios.pdb
