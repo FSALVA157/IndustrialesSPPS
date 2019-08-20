@@ -1,1 +1,7 @@
-D:\GITHUB_PROYECTOS_2019\INDUSTRIALES\IndustrialesSPPS\Industriales\CapaDatos\obj\Debug\CapaDatos.csprojResolveAssemblyReference.cache
+D:\GITHUB_PROYECTOS_2019\INDUSTRIALES\IndustrialesSPPS\Industriales\CapaDatos\bin\Debug\CapaDatos.dll.config
+D:\GITHUB_PROYECTOS_2019\INDUSTRIALES\IndustrialesSPPS\Industriales\CapaDatos\bin\Debug\CapaDatos.dll
+D:\GITHUB_PROYECTOS_2019\INDUSTRIALES\IndustrialesSPPS\Industriales\CapaDatos\bin\Debug\CapaDatos.pdb
+D:\GITHUB_PROYECTOS_2019\INDUSTRIALES\IndustrialesSPPS\Industriales\CapaDatos\obj\Debug\CapaDatos.dll
+D:\GITHUB_PROYECTOS_2019\INDUSTRIALES\IndustrialesSPPS\Industriales\CapaDatos\obj\Debug\CapaDatos.pdb
+D:\GITHUB_PROYECTOS_2019\INDUSTRIALES\IndustrialesSPPS\Industriales\CapaDatos\bin\Debug\CapaDatos.dll.CodeAnalysisLog.xml
+D:\GITHUB_PROYECTOS_2019\INDUSTRIALES\IndustrialesSPPS\Industriales\CapaDatos\bin\Debug\CapaDatos.dll.lastcodeanalysissucceeded
