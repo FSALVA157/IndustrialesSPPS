@@ -10,7 +10,7 @@ namespace CapaDatos
 {
     class DAnticipo
     {
-        //comentario de prueba
+
         private int _id_anticipo;
         private string _numero_anticipo;
         private decimal _cantidad_dinero;
