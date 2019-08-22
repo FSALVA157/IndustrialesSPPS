@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Industriales", "Industriales\Industriales.csproj", "{9D9D1ABF-68EF-46DA-9661-C3815F47DCED}"
 EndProject
@@ -12,9 +12,6 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CapaPresentacion", "CapaPresentacion\CapaPresentacion.csproj", "{525D8047-CFD4-4460-83EF-4C260E7EEFB6}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{D8B54E99-1B80-4F46-B354-EE131C4E761B}"
-	ProjectSection(SolutionItems) = preProject
-		CapaDatos\DAnticipo.cs = CapaDatos\DAnticipo.cs
-	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -41,6 +41,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Conexion.cs" />
+    <Compile Include="DAnticipo.cs" />
     <Compile Include="DDetalle.cs" />
     <Compile Include="DDistribucion.cs" />
     <Compile Include="DEstado.cs" />
