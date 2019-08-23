@@ -47,6 +47,7 @@
     <Compile Include="DDistribucion.cs" />
     <Compile Include="DEstado.cs" />
     <Compile Include="DEstado_Cuota.cs" />
+    <Compile Include="DFactura.cs" />
     <Compile Include="DLocalidad.cs" />
     <Compile Include="DMarca.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
