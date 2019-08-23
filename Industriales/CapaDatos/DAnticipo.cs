@@ -307,7 +307,7 @@ namespace CapaDatos
         }//fin mostrar
 
         //metodo buscar 
-        public DataTable Buscar_Compulsa_Clave(DAnticipo Anticipo)
+        public DataTable Buscar_Anticipo(DAnticipo Anticipo)
         {//inicio buscar x clave
             DataTable DtResultado = new DataTable("anticipo");
             SqlConnection SqlCon = new SqlConnection();
