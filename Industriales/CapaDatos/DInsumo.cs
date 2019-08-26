@@ -278,6 +278,7 @@ namespace CapaDatos
                 SqlParameter ParDenominacion = new SqlParameter();
                 ParDenominacion.ParameterName = "@denominacion";
                 ParDenominacion.SqlDbType = SqlDbType.VarChar;
+                ParDenominacion.Size = 255;
                 ParDenominacion.Value = Insumo.Denominacion;
                 SqlCmd.Parameters.Add(ParDenominacion);
 
@@ -296,6 +297,7 @@ namespace CapaDatos
                 SqlParameter ParPresentacion = new SqlParameter();
                 ParPresentacion.ParameterName = "@presentacion";
                 ParPresentacion.SqlDbType = SqlDbType.VarChar;
+                ParPresentacion.Size = 255;
                 ParPresentacion.Value = Insumo.Presentacion;
                 SqlCmd.Parameters.Add(ParPresentacion);
 
@@ -406,8 +408,8 @@ namespace CapaDatos
         }//fin mostrar
 
         //metodo buscar 
-        public DataTable Buscar_Insumo(DInsumo Insumo)
-        {//inicio buscar x clave
+        public DataTable Buscar(DInsumo Insumo)
+        {//inicio buscar
             DataTable DtResultado = new DataTable("insumo");
             SqlConnection SqlCon = new SqlConnection();
             try
