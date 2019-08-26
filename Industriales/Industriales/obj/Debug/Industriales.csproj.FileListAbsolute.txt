@@ -6,6 +6,5 @@ D:\GITHUB_PROYECTOS_2019\INDUSTRIALES\IndustrialesSPPS\Industriales\Industriales
 D:\GITHUB_PROYECTOS_2019\INDUSTRIALES\IndustrialesSPPS\Industriales\Industriales\bin\Debug\Industriales.dll.lastcodeanalysissucceeded
 D:\GITHUB_REPOSITORIOS_2019\IndustrialesSPPS\Industriales\Industriales\bin\Debug\Industriales.dll
 D:\GITHUB_REPOSITORIOS_2019\IndustrialesSPPS\Industriales\Industriales\bin\Debug\Industriales.pdb
-D:\GITHUB_REPOSITORIOS_2019\IndustrialesSPPS\Industriales\Industriales\obj\Debug\Industriales.csprojResolveAssemblyReference.cache
 D:\GITHUB_REPOSITORIOS_2019\IndustrialesSPPS\Industriales\Industriales\obj\Debug\Industriales.dll
 D:\GITHUB_REPOSITORIOS_2019\IndustrialesSPPS\Industriales\Industriales\obj\Debug\Industriales.pdb
