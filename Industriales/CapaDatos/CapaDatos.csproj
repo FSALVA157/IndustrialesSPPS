@@ -53,6 +53,7 @@
     <Compile Include="DMarca.cs" />
     <Compile Include="DMateria_Prima.cs" />
     <Compile Include="DPagos.cs" />
+    <Compile Include="DPedido_Insumo.cs" />
     <Compile Include="DProducto.cs" />
     <Compile Include="DProveedor.cs" />
     <Compile Include="DProvincia.cs" />
