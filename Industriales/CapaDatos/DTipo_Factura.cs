@@ -8,54 +8,54 @@ using System.Data.SqlClient;
 
 namespace CapaDatos
 {
-    class DSexo
-    {//inicio capa
-        private int _Id_sexo;
-        private string _Sexo;
+    class DTipo_Factura
+    {//inicio clase
+        private int _Id_tipo_factura;
+        private string _Tipo_factura;
         #region Propiedades
-        public int Id_sexo
+        public int Id_tipo_factura
         {
             get
             {
-                return _Id_sexo;
+                return _Id_tipo_factura;
             }
 
             set
             {
-                _Id_sexo = value;
+                _Id_tipo_factura = value;
             }
         }
 
-        public string Sexo
+        public string Tipo_factura
         {
             get
             {
-                return _Sexo;
+                return _Tipo_factura;
             }
 
             set
             {
-                _Sexo = value;
+                _Tipo_factura = value;
             }
         }
         #endregion Propiedades
 
-        #region Consrtuctores
-        DSexo()
+        #region Constructores
+        DTipo_Factura()
         {
 
         }
 
-        DSexo(int id_sexo, string sexo)
+        DTipo_Factura(int id_tipo_factura, string tipo_factura)
         {
-            this.Id_sexo = id_sexo;
-            this.Sexo = sexo;
+            this.Id_tipo_factura = id_tipo_factura;
+            this.Tipo_factura = tipo_factura;
         }
         #endregion Constructores
 
         #region Metodos
         //metodo insertar   
-        public string Insertar(DSexo Sexo)
+        public string Insertar(DTipo_Factura Tipo_Factura)
         {//inicio insertar
             string rpta = "";
             SqlConnection SqlCon = new SqlConnection();
@@ -67,22 +67,22 @@ namespace CapaDatos
                 //establecer el comando
                 SqlCommand SqlCmd = new SqlCommand();
                 SqlCmd.Connection = SqlCon;
-                SqlCmd.CommandText = "spinsertar_sexo";
+                SqlCmd.CommandText = "spinsertar_tipo_factura";
                 SqlCmd.CommandType = CommandType.StoredProcedure;
 
                 //parametros
-                SqlParameter ParId_Sexo = new SqlParameter();
-                ParId_Sexo.ParameterName = "@id_sexo";
-                ParId_Sexo.SqlDbType = SqlDbType.Int;
-                ParId_Sexo.Direction = ParameterDirection.Output;
-                SqlCmd.Parameters.Add(ParId_Sexo);
+                SqlParameter ParId_Tipo_Factura = new SqlParameter();
+                ParId_Tipo_Factura.ParameterName = "@id_tipo_factura";
+                ParId_Tipo_Factura.SqlDbType = SqlDbType.Int;
+                ParId_Tipo_Factura.Direction = ParameterDirection.Output;
+                SqlCmd.Parameters.Add(ParId_Tipo_Factura);
 
-                SqlParameter ParSexo = new SqlParameter();
-                ParSexo.ParameterName = "@sexo";
-                ParSexo.SqlDbType = SqlDbType.VarChar;
-                ParSexo.Size = 50;
-                ParSexo.Value = Sexo.Sexo;
-                SqlCmd.Parameters.Add(ParSexo);
+                SqlParameter ParTipo_Factura = new SqlParameter();
+                ParTipo_Factura.ParameterName = "@tipo_factura";
+                ParTipo_Factura.SqlDbType = SqlDbType.VarChar;
+                ParTipo_Factura.Size = 50;
+                ParTipo_Factura.Value = Tipo_Factura.Tipo_factura;
+                SqlCmd.Parameters.Add(ParTipo_Factura);
 
 
                 //ejecutar el codigo
@@ -108,7 +108,7 @@ namespace CapaDatos
         }//fin insertar
 
         //metodo editar
-        public string Editar(DSexo Sexo)
+        public string Editar(DTipo_Factura Tipo_Factura)
         {//inicio editar
             string rpta = "";
             SqlConnection SqlCon = new SqlConnection();
@@ -120,22 +120,22 @@ namespace CapaDatos
                 //establecer el comando
                 SqlCommand SqlCmd = new SqlCommand();
                 SqlCmd.Connection = SqlCon;
-                SqlCmd.CommandText = "speditar_sexo";
+                SqlCmd.CommandText = "speditar_tipo_factura";
                 SqlCmd.CommandType = CommandType.StoredProcedure;
 
                 //parametros
-                SqlParameter ParId_Sexo = new SqlParameter();
-                ParId_Sexo.ParameterName = "@id_sexo";
-                ParId_Sexo.SqlDbType = SqlDbType.Int;
-                ParId_Sexo.Value = Sexo.Id_sexo;
-                SqlCmd.Parameters.Add(ParId_Sexo);
+                SqlParameter ParId_Tipo_Factura = new SqlParameter();
+                ParId_Tipo_Factura.ParameterName = "@id_tipo_factura";
+                ParId_Tipo_Factura.SqlDbType = SqlDbType.Int;
+                ParId_Tipo_Factura.Value = Tipo_Factura.Id_tipo_factura;
+                SqlCmd.Parameters.Add(ParId_Tipo_Factura);
 
-                SqlParameter ParSexo = new SqlParameter();
-                ParSexo.ParameterName = "@sexo";
-                ParSexo.SqlDbType = SqlDbType.VarChar;
-                ParSexo.Size = 50;
-                ParSexo.Value = Sexo.Sexo;
-                SqlCmd.Parameters.Add(ParSexo);
+                SqlParameter ParTipo_Factura = new SqlParameter();
+                ParTipo_Factura.ParameterName = "@tipo_factura";
+                ParTipo_Factura.SqlDbType = SqlDbType.VarChar;
+                ParTipo_Factura.Size = 50;
+                ParTipo_Factura.Value = Tipo_Factura.Tipo_factura;
+                SqlCmd.Parameters.Add(ParTipo_Factura);
 
                 //ejecutar el codigo
                 rpta = SqlCmd.ExecuteNonQuery() == 1 ? "OK" : "HA FALLADO LA EDICION DEL REGISTRO";
@@ -160,7 +160,7 @@ namespace CapaDatos
         }//fin editar
 
         //metodo eliminar
-        public string Eliminar(DSexo Sexo)
+        public string Eliminar(DTipo_Factura Tipo_Factura)
         {//inicio eliminar
             string rpta = "";
             SqlConnection SqlCon = new SqlConnection();
@@ -172,15 +172,16 @@ namespace CapaDatos
                 //establecer el comando
                 SqlCommand SqlCmd = new SqlCommand();
                 SqlCmd.Connection = SqlCon;
-                SqlCmd.CommandText = "speliminar_sexo";
+                SqlCmd.CommandText = "speliminar_tipo_factura";
                 SqlCmd.CommandType = CommandType.StoredProcedure;
 
                 //parametros
-                SqlParameter ParId_Sexo = new SqlParameter();
-                ParId_Sexo.ParameterName = "@id_sexo";
-                ParId_Sexo.SqlDbType = SqlDbType.Int;
-                ParId_Sexo.Value = Sexo.Id_sexo;
-                SqlCmd.Parameters.Add(ParId_Sexo);
+                SqlParameter ParId_Tipo_Factura = new SqlParameter();
+                ParId_Tipo_Factura.ParameterName = "@id_tipo_factura";
+                ParId_Tipo_Factura.SqlDbType = SqlDbType.Int;
+                ParId_Tipo_Factura.Value = Tipo_Factura.Id_tipo_factura;
+                SqlCmd.Parameters.Add(ParId_Tipo_Factura);
+
 
                 rpta = SqlCmd.ExecuteNonQuery() == 1 ? "OK" : "NO SE HA ELIMINADO EL REGISTRO";
 
@@ -206,7 +207,7 @@ namespace CapaDatos
         //metodo mostrar
         public DataTable Mostrar()
         {//inicio mostrar
-            DataTable DtResultado = new DataTable("sexo");
+            DataTable DtResultado = new DataTable("tipo_Factura");
             SqlConnection SqlCon = new SqlConnection();
             try
             {
@@ -214,7 +215,7 @@ namespace CapaDatos
                 SqlCommand SqlCmd = new SqlCommand();
                 SqlCmd.Connection = SqlCon;
                 SqlCmd.CommandType = CommandType.StoredProcedure;
-                SqlCmd.CommandText = "spmostrar_sexo";
+                SqlCmd.CommandText = "spmostrar_tipo_factura";
 
                 SqlDataAdapter SqlDat = new SqlDataAdapter(SqlCmd);
                 SqlDat.Fill(DtResultado);
@@ -231,7 +232,7 @@ namespace CapaDatos
             return DtResultado;
         }//fin mostrar
 
-         
+
         #endregion Metodos
-    }//inicio capa
+    }//fin clase
 }
