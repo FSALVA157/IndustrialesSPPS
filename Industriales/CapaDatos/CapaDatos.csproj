@@ -51,6 +51,7 @@
     <Compile Include="DInsumo.cs" />
     <Compile Include="DLocalidad.cs" />
     <Compile Include="DMarca.cs" />
+    <Compile Include="DMateria_Prima.cs" />
     <Compile Include="DProducto.cs" />
     <Compile Include="DProveedor.cs" />
     <Compile Include="DProvincia.cs" />
