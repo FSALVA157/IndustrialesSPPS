@@ -55,6 +55,7 @@
     <Compile Include="DPagos.cs" />
     <Compile Include="DPedido_Insumo.cs" />
     <Compile Include="DPedido_Presupuesto.cs" />
+    <Compile Include="DPedido_Producto.cs" />
     <Compile Include="DProducto.cs" />
     <Compile Include="DProveedor.cs" />
     <Compile Include="DProvincia.cs" />
