@@ -59,6 +59,7 @@
     <Compile Include="DPedido_Trabajo.cs" />
     <Compile Include="DPresupuesto.cs" />
     <Compile Include="DPresupuesto_Insumo.cs" />
+    <Compile Include="DProduccion.cs" />
     <Compile Include="DProducto.cs" />
     <Compile Include="DProveedor.cs" />
     <Compile Include="DProvincia.cs" />
