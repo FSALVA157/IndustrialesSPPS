@@ -140,6 +140,12 @@ namespace CapaDatos
                 ParCantidad.Value = Presupuesto_Insumo.Cantidad;
                 SqlCmd.Parameters.Add(ParCantidad);
 
+                SqlParameter ParPrecio_Unitario = new SqlParameter();
+                ParPrecio_Unitario.ParameterName = "@precio_unitario";
+                ParPrecio_Unitario.SqlDbType = SqlDbType.Decimal;
+                ParPrecio_Unitario.Value = Presupuesto_Insumo.Precio_unitario;
+                SqlCmd.Parameters.Add(ParPrecio_Unitario);
+
 
                 //ejecutar el codigo
                 rpta = SqlCmd.ExecuteNonQuery() == 1 ? "OK" : "EL REGISTRO NO HA SIDO AGREGADO";
@@ -203,6 +209,12 @@ namespace CapaDatos
                 ParCantidad.SqlDbType = SqlDbType.Int;
                 ParCantidad.Value = Presupuesto_Insumo.Cantidad;
                 SqlCmd.Parameters.Add(ParCantidad);
+
+                SqlParameter ParPrecio_Unitario = new SqlParameter();
+                ParPrecio_Unitario.ParameterName = "@precio_unitario";
+                ParPrecio_Unitario.SqlDbType = SqlDbType.Decimal;
+                ParPrecio_Unitario.Value = Presupuesto_Insumo.Precio_unitario;
+                SqlCmd.Parameters.Add(ParPrecio_Unitario);
 
                 //ejecutar el codigo
                 rpta = SqlCmd.ExecuteNonQuery() == 1 ? "OK" : "HA FALLADO LA EDICION DEL REGISTRO";
