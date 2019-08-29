@@ -8,7 +8,7 @@ using System.Data.SqlClient;
 
 namespace CapaDatos
 {
-    class DCliente
+    public class DCliente
     {//inicio de clase
         private int _Id_cliente;
         private int _Dni;
@@ -265,13 +265,13 @@ namespace CapaDatos
         }
         #endregion Propiedades
 
-        #region Metodos
-        DCliente()
+        #region Constructores
+        public DCliente()
         {
 
         }
 
-        DCliente(int id_cliente, int dni, int legajo, string apellido, string nombre, string telefono, string direccion, string email, int personal, int habilitado, DateTime fecha_nac, int localidad, decimal monto_alcance, int cuenta_bancaria, byte[] foto, int id_tipo_cliente, int id_sexo, string textobuscar)
+        public DCliente(int id_cliente, int dni, int legajo, string apellido, string nombre, string telefono, string direccion, string email, int personal, int habilitado, DateTime fecha_nac, int localidad, decimal monto_alcance, int cuenta_bancaria, byte[] foto, int id_tipo_cliente, int id_sexo, string textobuscar)
         {
             this.Id_cliente = id_cliente;
             this.Dni = dni;
@@ -292,7 +292,7 @@ namespace CapaDatos
             this.Id_sexo = id_sexo;
             this.Textobuscar = textobuscar;
         }
-        #endregion Metodos
+        #endregion Constructores
 
         #region Metodos        
         //metodo insertar   
@@ -662,7 +662,7 @@ namespace CapaDatos
         }//fin mostrar
 
         //metodo buscar 
-        public DataTable Buscar_Cliente(DCliente Cliente)
+        public DataTable Buscar(DCliente Cliente)
         {//inicio buscar x clave
             DataTable DtResultado = new DataTable("cliente");
             SqlConnection SqlCon = new SqlConnection();
