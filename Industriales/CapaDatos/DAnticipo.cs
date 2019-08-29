@@ -8,7 +8,7 @@ using System.Data.SqlClient;
 
 namespace CapaDatos
 {
-    class DAnticipo
+    public class DAnticipo
     {//inicio de clase
         private int _Id_anticipo;
         private string _Numero_anticipo;
@@ -307,7 +307,7 @@ namespace CapaDatos
         }//fin mostrar
 
         //metodo buscar 
-        public DataTable Buscar_Anticipo(DAnticipo Anticipo)
+        public DataTable Buscar(DAnticipo Anticipo)
         {//inicio buscar x clave
             DataTable DtResultado = new DataTable("anticipo");
             SqlConnection SqlCon = new SqlConnection();
