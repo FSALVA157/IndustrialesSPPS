@@ -8,7 +8,7 @@ using System.Data.SqlClient;
 
 namespace CapaDatos
 {
-    class DEstado
+    public class DEstado
     {//inicio de clase
         private int _Id_estado;
         private string _Estado;
@@ -41,12 +41,12 @@ namespace CapaDatos
         #endregion Propiedades
 
         #region Constrctores
-        DEstado()
+    public DEstado()
     {
 
     }
 
-    DEstado(int id_estado, string estado)
+    public DEstado(int id_estado, string estado)
     {
             this.Id_estado = id_estado;
             this.Estado = estado;

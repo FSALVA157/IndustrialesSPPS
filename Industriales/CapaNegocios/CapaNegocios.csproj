@@ -45,6 +45,7 @@
     <Compile Include="NCliente.cs" />
     <Compile Include="NDetalle.cs" />
     <Compile Include="NDistribucion.cs" />
+    <Compile Include="NEstado.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
