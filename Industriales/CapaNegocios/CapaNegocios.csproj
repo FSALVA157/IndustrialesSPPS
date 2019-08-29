@@ -43,6 +43,7 @@
     <Compile Include="Class1.cs" />
     <Compile Include="NAnticipo.cs" />
     <Compile Include="NCliente.cs" />
+    <Compile Include="NDetalle.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
