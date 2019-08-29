@@ -44,6 +44,7 @@
     <Compile Include="NAnticipo.cs" />
     <Compile Include="NCliente.cs" />
     <Compile Include="NDetalle.cs" />
+    <Compile Include="NDistribucion.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

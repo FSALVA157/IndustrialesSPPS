@@ -8,7 +8,7 @@ using System.Data.SqlClient;
 
 namespace CapaDatos
 {
-    class DDistribucion
+    public class DDistribucion
     {//inicio clase
         private int _Id_distribucion;
         private int _Id_taller;
@@ -97,12 +97,12 @@ namespace CapaDatos
         #endregion Propiedades
 
         #region Metodos
-        DDistribucion()
+        public DDistribucion()
         {
 
         }
 
-        DDistribucion(int id_distribucion, int id_taller, int id_anticipo, DateTime fecha_anticipo, decimal monto, int id_recibo)
+        public DDistribucion(int id_distribucion, int id_taller, int id_anticipo, DateTime fecha_anticipo, decimal monto, int id_recibo)
         {
             this.Id_distribucion = id_distribucion;
             this.Id_taller = id_taller;
@@ -190,7 +190,7 @@ namespace CapaDatos
         }//fin insertar
 
         //metodo editar
-        public string Editar(DLocalidad Localidad)
+        public string Editar(DDistribucion Distribucion)
         {//inicio editar
             string rpta = "";
             SqlConnection SqlCon = new SqlConnection();
@@ -202,28 +202,45 @@ namespace CapaDatos
                 //establecer el comando
                 SqlCommand SqlCmd = new SqlCommand();
                 SqlCmd.Connection = SqlCon;
-                SqlCmd.CommandText = "speditar_localidad";
+                SqlCmd.CommandText = "speditar_distribucion";
                 SqlCmd.CommandType = CommandType.StoredProcedure;
 
                 //parametros
-                SqlParameter ParId_Localidad = new SqlParameter();
-                ParId_Localidad.ParameterName = "@id_localidad";
-                ParId_Localidad.SqlDbType = SqlDbType.Int;
-                ParId_Localidad.Value = Localidad.Localidad;
-                SqlCmd.Parameters.Add(ParId_Localidad);
+                SqlParameter ParId_Distribucion = new SqlParameter();
+                ParId_Distribucion.ParameterName = "@id_distribucion";
+                ParId_Distribucion.SqlDbType = SqlDbType.Int;
+                ParId_Distribucion.Value = Distribucion.Id_distribucion;
+                SqlCmd.Parameters.Add(ParId_Distribucion);
 
-                SqlParameter ParId_Provincia = new SqlParameter();
-                ParId_Provincia.ParameterName = "@id_provincia";
-                ParId_Provincia.SqlDbType = SqlDbType.Int;
-                ParId_Provincia.Value = Localidad.Localidad;
-                SqlCmd.Parameters.Add(ParId_Provincia);
+                SqlParameter ParId_Taller = new SqlParameter();
+                ParId_Taller.ParameterName = "@id_taller";
+                ParId_Taller.SqlDbType = SqlDbType.Int;
+                ParId_Taller.Value = Distribucion.Id_taller;
+                SqlCmd.Parameters.Add(ParId_Taller);
 
-                SqlParameter ParLocalidad = new SqlParameter();
-                ParLocalidad.ParameterName = "@localidad";
-                ParLocalidad.SqlDbType = SqlDbType.VarChar;
-                ParLocalidad.Size = 50;
-                ParLocalidad.Value = Localidad.Localidad;
-                SqlCmd.Parameters.Add(ParLocalidad);
+                SqlParameter ParId_Anticipo = new SqlParameter();
+                ParId_Anticipo.ParameterName = "@id_anticipo";
+                ParId_Anticipo.SqlDbType = SqlDbType.Int;
+                ParId_Anticipo.Value = Distribucion.Id_anticipo;
+                SqlCmd.Parameters.Add(ParId_Anticipo);
+
+                SqlParameter ParFecha_Entrega = new SqlParameter();
+                ParFecha_Entrega.ParameterName = "@fecha_entrega";
+                ParFecha_Entrega.SqlDbType = SqlDbType.DateTime;
+                ParFecha_Entrega.Value = Distribucion.Fecha_anticipo;
+                SqlCmd.Parameters.Add(ParFecha_Entrega);
+
+                SqlParameter ParMonto = new SqlParameter();
+                ParMonto.ParameterName = "@monto";
+                ParMonto.SqlDbType = SqlDbType.Decimal;
+                ParMonto.Value = Distribucion.Monto;
+                SqlCmd.Parameters.Add(ParMonto);
+
+                SqlParameter ParId_Recibido = new SqlParameter();
+                ParId_Recibido.ParameterName = "@id_recibido";
+                ParId_Recibido.SqlDbType = SqlDbType.Int;
+                ParMonto.Value = Distribucion.Monto;
+                SqlCmd.Parameters.Add(ParMonto);
 
 
 
@@ -250,7 +267,7 @@ namespace CapaDatos
         }//fin editar
 
         //metodo eliminar
-        public string Eliminar(DLocalidad Localidad)
+        public string Eliminar(DDistribucion Distribucion)
         {//inicio eliminar
             string rpta = "";
             SqlConnection SqlCon = new SqlConnection();
@@ -262,15 +279,15 @@ namespace CapaDatos
                 //establecer el comando
                 SqlCommand SqlCmd = new SqlCommand();
                 SqlCmd.Connection = SqlCon;
-                SqlCmd.CommandText = "speliminar_localidad";
+                SqlCmd.CommandText = "speliminar_distribucion";
                 SqlCmd.CommandType = CommandType.StoredProcedure;
 
                 //parametros
-                SqlParameter ParId_Localidad = new SqlParameter();
-                ParId_Localidad.ParameterName = "@id_localidad";
-                ParId_Localidad.SqlDbType = SqlDbType.Int;
-                ParId_Localidad.Value = Localidad.Id_localidad;
-                SqlCmd.Parameters.Add(ParId_Localidad);
+                SqlParameter ParId_Distribucion = new SqlParameter();
+                ParId_Distribucion.ParameterName = "@id_distribucion";
+                ParId_Distribucion.SqlDbType = SqlDbType.Int;
+                ParId_Distribucion.Value = Distribucion.Id_distribucion;
+                SqlCmd.Parameters.Add(ParId_Distribucion);
 
                 rpta = SqlCmd.ExecuteNonQuery() == 1 ? "OK" : "NO SE HA ELIMINADO EL REGISTRO";
 
@@ -296,7 +313,7 @@ namespace CapaDatos
         //metodo mostrar
         public DataTable Mostrar()
         {//inicio mostrar
-            DataTable DtResultado = new DataTable("localidad");
+            DataTable DtResultado = new DataTable("distribucion");
             SqlConnection SqlCon = new SqlConnection();
             try
             {
@@ -304,7 +321,7 @@ namespace CapaDatos
                 SqlCommand SqlCmd = new SqlCommand();
                 SqlCmd.Connection = SqlCon;
                 SqlCmd.CommandType = CommandType.StoredProcedure;
-                SqlCmd.CommandText = "spmostrar_localidad";
+                SqlCmd.CommandText = "spmostrar_distribucion";
 
                 SqlDataAdapter SqlDat = new SqlDataAdapter(SqlCmd);
                 SqlDat.Fill(DtResultado);
