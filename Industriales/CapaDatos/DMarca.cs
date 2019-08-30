@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace CapaDatos
 {
-    class DMarca
+    public class DMarca
     {
         private int _Id_marca;
         private string _Denominacion;
@@ -150,7 +150,82 @@ namespace CapaDatos
             return rpta;
         }
         //Fin editar
-        
-        #endregion metodos
+
+        //metodo eliminar
+        public string Eliminar(DMarca Marca)
+        {//inicio eliminar
+            string rpta = "";
+            SqlConnection SqlCon = new SqlConnection();
+            try
+            {
+                //conexion
+                SqlCon.ConnectionString = Conexion.Cn;
+                SqlCon.Open();
+                //establecer el comando
+                SqlCommand SqlCmd = new SqlCommand();
+                SqlCmd.Connection = SqlCon;
+                SqlCmd.CommandText = "speliminar_marca";
+                SqlCmd.CommandType = CommandType.StoredProcedure;
+
+                //parametros
+                SqlParameter ParId_Marca = new SqlParameter();
+                ParId_Marca.ParameterName = "@id_marca";
+                ParId_Marca.SqlDbType = SqlDbType.Int;
+                ParId_Marca.Value = Marca.Id_marca;
+                SqlCmd.Parameters.Add(ParId_Marca);
+
+                rpta = SqlCmd.ExecuteNonQuery() == 1 ? "OK" : "NO SE HA ELIMINADO EL REGISTRO";
+
+
+
+            }
+            catch (Exception ex)
+            {
+
+                rpta = ex.Message + ex.StackTrace;
+            }
+            finally
+            {
+                if (SqlCon.State == ConnectionState.Open)
+                {
+                    SqlCon.Close();
+                }
+
+            }
+            return rpta;
+        }//fin eliminar
+
+        //metodo mostrar
+        public DataTable Mostrar()
+    {//inicio mostrar
+        DataTable DtResultado = new DataTable("marca");
+        SqlConnection SqlCon = new SqlConnection();
+        try
+        {
+            SqlCon.ConnectionString = Conexion.Cn;
+            SqlCommand SqlCmd = new SqlCommand();
+            SqlCmd.Connection = SqlCon;
+            SqlCmd.CommandType = CommandType.StoredProcedure;
+            SqlCmd.CommandText = "spmostrar_marca";
+
+            SqlDataAdapter SqlDat = new SqlDataAdapter(SqlCmd);
+            SqlDat.Fill(DtResultado);
+
+
+
+
+        }
+        catch (Exception)
+        {
+
+            return null;
+        }
+        return DtResultado;
+    }//fin mostrar
+
+
+    #endregion Metodos
+
     }
+
 }

@@ -51,6 +51,7 @@
     <Compile Include="NHistorial_Estado.cs" />
     <Compile Include="NInsumo.cs" />
     <Compile Include="NLocalidad.cs" />
+    <Compile Include="NMarca.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
