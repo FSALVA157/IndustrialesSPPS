@@ -8,7 +8,7 @@ using System.Data.SqlClient;
 
 namespace CapaDatos
 {
-    class DMateria_Prima
+    public class DMateria_Prima
     {//inicio de clase
         private int _Id_materia_prima;
         private int _Id_insumo;
@@ -69,12 +69,12 @@ namespace CapaDatos
         #endregion Propiedades
 
         #region Constructores
-        DMateria_Prima()
+        public DMateria_Prima()
         {
 
         }
 
-        DMateria_Prima(int id_materia_prima, int id_insumo, decimal cantidad_utilizada, int id_producto)
+        public DMateria_Prima(int id_materia_prima, int id_insumo, decimal cantidad_utilizada, int id_producto)
         {
             this.Id_materia_prima = id_materia_prima;
             this.Id_insumo = id_insumo;
