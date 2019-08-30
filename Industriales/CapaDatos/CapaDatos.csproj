@@ -48,6 +48,7 @@
     <Compile Include="DEstado.cs" />
     <Compile Include="DEstado_Cuota.cs" />
     <Compile Include="DFactura.cs" />
+    <Compile Include="DHistorial_Estado.cs" />
     <Compile Include="DInsumo.cs" />
     <Compile Include="DLocalidad.cs" />
     <Compile Include="DMarca.cs" />
