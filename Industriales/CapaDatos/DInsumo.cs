@@ -8,7 +8,7 @@ using System.Data.SqlClient;
 
 namespace CapaDatos
 {
-    class DInsumo
+    public class DInsumo
     {//inicio de clase
         private int _Id_insumo;
         private int _Codigo_insumo;
@@ -139,12 +139,12 @@ namespace CapaDatos
         #endregion Propiedades
 
         #region Metodos
-        DInsumo()
+        public DInsumo()
         {
 
         }
 
-        DInsumo(int id_insumo, int codigo_insumo, string denominacion, int id_unidad_medida, decimal precio_referencia, string presentacion, int id_marca, int id_proveedor, string textobuscar)
+        public DInsumo(int id_insumo, int codigo_insumo, string denominacion, int id_unidad_medida, decimal precio_referencia, string presentacion, int id_marca, int id_proveedor, string textobuscar)
         {
             this.Id_insumo = id_insumo;
             this.Codigo_insumo = codigo_insumo;
