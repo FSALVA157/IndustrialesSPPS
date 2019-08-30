@@ -47,6 +47,7 @@
     <Compile Include="NDistribucion.cs" />
     <Compile Include="NEstado.cs" />
     <Compile Include="NEstado_Cuota.cs" />
+    <Compile Include="NFactura.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

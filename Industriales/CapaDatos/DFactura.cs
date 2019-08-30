@@ -8,7 +8,7 @@ using System.Data.SqlClient;
 
 namespace CapaDatos
 {
-    class DFactura
+    public class DFactura
     {//inicio de clase
         private int _Id_factura;
         private int _Id_cliente;
@@ -139,12 +139,12 @@ namespace CapaDatos
         #endregion Propiedades
 
         #region Metodos
-        DFactura()
+        public DFactura()
         {
 
         }
 
-        DFactura(int id_factura, int id_cliente, DateTime fecha_venta, decimal costo_total, int numero_factura, int comprobante_exposicion, int id_tipo_pago, int emite_factura, int tipo_factura)
+        public DFactura(int id_factura, int id_cliente, DateTime fecha_venta, decimal costo_total, int numero_factura, int comprobante_exposicion, int id_tipo_pago, int emite_factura, int tipo_factura)
         {
             this.Id_factura = id_factura;
             this.Id_cliente = id_cliente;
