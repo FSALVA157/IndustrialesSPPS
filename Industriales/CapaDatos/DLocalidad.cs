@@ -8,7 +8,7 @@ using System.Data.SqlClient;
 
 namespace CapaDatos
 {
-    class DLocalidad
+    public class DLocalidad
     {//inicio clase
         private int _Id_localidad;
         private int _Id_provincia;
@@ -55,12 +55,12 @@ namespace CapaDatos
         #endregion Propiedades
 
         #region Metodos
-        DLocalidad()
+        public DLocalidad()
         {
 
         }
 
-        DLocalidad(int id_localidad, int id_provincia, string localidad)
+        public DLocalidad(int id_localidad, int id_provincia, string localidad)
         {
             this.Id_localidad = id_localidad;
             this.Id_provincia = id_provincia;
