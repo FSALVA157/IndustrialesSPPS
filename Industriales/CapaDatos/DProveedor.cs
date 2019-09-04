@@ -8,7 +8,7 @@ using System.Data.SqlClient;
 
 namespace CapaDatos
 {
-    class DProveedor
+    public class DProveedor
     {//inicio clase
         private int _Id_proveedor;
         private string _Denominacion;
@@ -97,12 +97,12 @@ namespace CapaDatos
         #endregion Propiedades
 
         #region Constructores
-        DProveedor()
+        public DProveedor()
         {
 
         }
 
-        DProveedor(int id_proveedor, string denominacion, string direccion, string telefono, string email, string textobuscar)
+        public DProveedor(int id_proveedor, string denominacion, string direccion, string telefono, string email, string textobuscar)
         {
             this.Id_proveedor = id_proveedor;
             this.Denominacion = denominacion;
