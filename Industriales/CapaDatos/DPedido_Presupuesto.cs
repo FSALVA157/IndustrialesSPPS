@@ -8,7 +8,7 @@ using System.Data.SqlClient;
 
 namespace CapaDatos
 {
-    class DPedido_Presupuesto
+    public class DPedido_Presupuesto
     {//inicio de clase
         private int _Id_pedido_presupuesto;
         private int _Id_pedido;
@@ -55,12 +55,12 @@ namespace CapaDatos
         #endregion Propiedades
 
         #region Constructores
-        DPedido_Presupuesto()
+        public DPedido_Presupuesto()
         {
 
         }
 
-        DPedido_Presupuesto(int id_pedido_presupuesto, int id_pedido, int id_presupuesto)
+        public DPedido_Presupuesto(int id_pedido_presupuesto, int id_pedido, int id_presupuesto)
         {
             this.Id_pedido_presupuesto = id_pedido_presupuesto;
             this.Id_pedido = id_pedido;

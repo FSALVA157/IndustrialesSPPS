@@ -55,6 +55,7 @@
     <Compile Include="NMateria_Prima.cs" />
     <Compile Include="NPagos.cs" />
     <Compile Include="NPedido_Insumo.cs" />
+    <Compile Include="NPedido_Presupuesto.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
