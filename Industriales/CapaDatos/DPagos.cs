@@ -8,7 +8,7 @@ using System.Data.SqlClient;
 
 namespace CapaDatos
 {
-    class DPagos
+    public class DPagos
     {//inicio de clase
         private int _Id_pago;
         private int _Id_venta;
@@ -111,12 +111,12 @@ namespace CapaDatos
         #endregion Propiedades
 
         #region Metodos
-        DPagos()
+        public DPagos()
         {
 
         }
 
-        DPagos(int id_pago, int id_venta, int cuota_numero, decimal monto_cuota, int estado_cuota, DateTime fecha_cuota, int numero_comprobante)
+        public DPagos(int id_pago, int id_venta, int cuota_numero, decimal monto_cuota, int estado_cuota, DateTime fecha_cuota, int numero_comprobante)
         {
             this.Id_pago = id_pago;
             this.Id_venta = id_venta;
