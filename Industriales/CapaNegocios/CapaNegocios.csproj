@@ -41,6 +41,29 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
+    <Compile Include="NAnticipo.cs" />
+    <Compile Include="NCliente.cs" />
+    <Compile Include="NDetalle.cs" />
+    <Compile Include="NDistribucion.cs" />
+    <Compile Include="NEstado.cs" />
+    <Compile Include="NEstado_Cuota.cs" />
+    <Compile Include="NFactura.cs" />
+    <Compile Include="NHistorial_Estado.cs" />
+    <Compile Include="NInsumo.cs" />
+    <Compile Include="NLocalidad.cs" />
+    <Compile Include="NMarca.cs" />
+    <Compile Include="NMateria_Prima.cs" />
+    <Compile Include="NPagos.cs" />
+    <Compile Include="NPedido_Insumo.cs" />
+    <Compile Include="NPedido_Presupuesto.cs" />
+    <Compile Include="NPedido_Producto.cs" />
+    <Compile Include="NPedido_Trabajo.cs" />
+    <Compile Include="NPresupuesto.cs" />
+    <Compile Include="NPresupuesto_Insumo.cs" />
+    <Compile Include="NProduccion.cs" />
+    <Compile Include="NProducto.cs" />
+    <Compile Include="NProveedor.cs" />
+    <Compile Include="NProvincia.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

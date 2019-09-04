@@ -1,32 +1,32 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Data;
-using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Data;
+using System.Data.SqlClient;
 
 namespace CapaDatos
 {
-    class DAnticipo
-    {
-        private int _id_anticipo;
-        private string _numero_anticipo;
-        private decimal _cantidad_dinero;
-        private DateTime _fecha_recibido;
-        private string _textobuscar;
+    public class DAnticipo
+    {//inicio de clase
+        private int _Id_anticipo;
+        private string _Numero_anticipo;
+        private decimal _Cantidad_dinero;
+        private DateTime _Fecha_recibido;
+        private string _Textobuscar;
 
         #region Propiedades
         public int Id_anticipo
         {
             get
             {
-                return _id_anticipo;
+                return _Id_anticipo;
             }
 
             set
             {
-                _id_anticipo = value;
+                _Id_anticipo = value;
             }
         }
 
@@ -34,12 +34,12 @@ namespace CapaDatos
         {
             get
             {
-                return _numero_anticipo;
+                return _Numero_anticipo;
             }
 
             set
             {
-                _numero_anticipo = value;
+                _Numero_anticipo = value;
             }
         }
 
@@ -47,12 +47,12 @@ namespace CapaDatos
         {
             get
             {
-                return _cantidad_dinero;
+                return _Cantidad_dinero;
             }
 
             set
             {
-                _cantidad_dinero = value;
+                _Cantidad_dinero = value;
             }
         }
 
@@ -60,12 +60,12 @@ namespace CapaDatos
         {
             get
             {
-                return _fecha_recibido;
+                return _Fecha_recibido;
             }
 
             set
             {
-                _fecha_recibido = value;
+                _Fecha_recibido = value;
             }
         }
 
@@ -73,12 +73,12 @@ namespace CapaDatos
         {
             get
             {
-                return _textobuscar;
+                return _Textobuscar;
             }
 
             set
             {
-                _textobuscar = value;
+                _Textobuscar = value;
             }
         }
         #endregion Propiedades
@@ -307,7 +307,7 @@ namespace CapaDatos
         }//fin mostrar
 
         //metodo buscar 
-        public DataTable Buscar_Compulsa_Clave(DAnticipo Anticipo)
+        public DataTable Buscar(DAnticipo Anticipo)
         {//inicio buscar x clave
             DataTable DtResultado = new DataTable("anticipo");
             SqlConnection SqlCon = new SqlConnection();
@@ -343,5 +343,5 @@ namespace CapaDatos
 
         #endregion Metodos
 
-    }
+    }//fin de clase
 }
