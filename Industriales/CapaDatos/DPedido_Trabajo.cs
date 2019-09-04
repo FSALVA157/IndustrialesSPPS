@@ -8,7 +8,7 @@ using System.Data.SqlClient;
 
 namespace CapaDatos
 {
-    class DPedido_Trabajo
+    public class DPedido_Trabajo
     {//inicio de clase
         private int _Id_pedido;
         private int _Id_taller;
@@ -125,12 +125,12 @@ namespace CapaDatos
         #endregion Propiedades
 
         #region Constructores
-        DPedido_Trabajo()
+        public DPedido_Trabajo()
         {
 
         }
 
-        DPedido_Trabajo(int id_pedido, int id_taller, DateTime fecha_pedido, int numero_transaccion, string numero_nota, string numero_contratacion, int cumplimentado, string comentario)
+        public DPedido_Trabajo(int id_pedido, int id_taller, DateTime fecha_pedido, int numero_transaccion, string numero_nota, string numero_contratacion, int cumplimentado, string comentario)
         {
             this.Id_pedido = id_pedido;
             this.Id_taller = id_taller;

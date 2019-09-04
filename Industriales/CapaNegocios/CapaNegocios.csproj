@@ -57,6 +57,7 @@
     <Compile Include="NPedido_Insumo.cs" />
     <Compile Include="NPedido_Presupuesto.cs" />
     <Compile Include="NPedido_Producto.cs" />
+    <Compile Include="NPedido_Trabajo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
