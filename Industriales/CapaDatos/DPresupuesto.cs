@@ -8,7 +8,7 @@ using System.Data.SqlClient;
 
 namespace CapaDatos
 {
-    class DPresupuesto
+    public class DPresupuesto
     {//inicio de clase
         private int _Id_presupuesto;
         private DateTime _Fecha_emision;
@@ -83,12 +83,12 @@ namespace CapaDatos
         #endregion Propiedades
 
         #region Constructores
-        DPresupuesto()
+        public DPresupuesto()
         {
 
         }
 
-        DPresupuesto(int id_presupuesto, DateTime fecha_emision, int id_insumo, decimal presio_total, int id_proveedor)
+        public DPresupuesto(int id_presupuesto, DateTime fecha_emision, int id_insumo, decimal presio_total, int id_proveedor)
         {
             this.Id_presupuesto = id_presupuesto;
             this.Fecha_emision = fecha_emision;
