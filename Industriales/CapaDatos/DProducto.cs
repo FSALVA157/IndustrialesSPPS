@@ -8,7 +8,7 @@ using System.Data.SqlClient;
 
 namespace CapaDatos
 {
-    class DProducto
+    public class DProducto
     {//inicio capa
         private int _Id_producto;
         private int _Codigo_barra;
@@ -153,12 +153,12 @@ namespace CapaDatos
         #endregion Propiedades
 
         #region Metodos
-        DProducto()
+        public DProducto()
         {
 
         }
 
-        DProducto(int id_producto, int codigo_barra, string descripcion, decimal precio_venta, int stock, int stock_minimo, DateTime vencimiento, int id_taller, int id_materia_prima, string textobuscar)
+        public DProducto(int id_producto, int codigo_barra, string descripcion, decimal precio_venta, int stock, int stock_minimo, DateTime vencimiento, int id_taller, int id_materia_prima, string textobuscar)
         {
             this.Id_producto = id_producto;
             this.Codigo_barra = codigo_barra;
