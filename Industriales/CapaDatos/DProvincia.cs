@@ -8,7 +8,7 @@ using System.Data.SqlClient;
 
 namespace CapaDatos
 {
-    class DProvincia
+    public class DProvincia
     {//inicio clase
         private int _Id_provincia;
         private string _Provincia;
@@ -55,12 +55,12 @@ namespace CapaDatos
         #endregion Propiedades
 
         #region Constructores
-        DProvincia()
+        public DProvincia()
         {
 
         }
 
-        DProvincia(int id_provincia, string provincia, string textobuscar)
+        public DProvincia(int id_provincia, string provincia, string textobuscar)
         {
             this.Id_provincia = id_provincia;
             this.Provincia = provincia;
