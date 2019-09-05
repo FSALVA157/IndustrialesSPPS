@@ -68,6 +68,7 @@
     <Compile Include="NSexo.cs" />
     <Compile Include="NSobrantes.cs" />
     <Compile Include="NTaller.cs" />
+    <Compile Include="NTipo_Cliente.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
