@@ -8,23 +8,23 @@ using System.Data.SqlClient;
 
 namespace CapaDatos
 {
-    class DSobrantes
+    public class DSobrantes
     {//inicio clase
-        private int _Id_sobrantes;
+        private int _Id_sobrante;
         private int _Id_insumo;
         private int _Id_pedido;
         private decimal _Cantidad;
         #region Propiedades
-        public int Id_sobrantes
+        public int Id_sobrante
         {
             get
             {
-                return _Id_sobrantes;
+                return _Id_sobrante;
             }
 
             set
             {
-                _Id_sobrantes = value;
+                _Id_sobrante = value;
             }
         }
 
@@ -69,14 +69,14 @@ namespace CapaDatos
         #endregion Propiedades
 
         #region Constructores
-        DSobrantes()
+        public DSobrantes()
         {
 
         }
 
-        DSobrantes(int id_sobrantes, int id_insumo, int id_pedido, decimal cantidad)
+        public DSobrantes(int id_sobrante, int id_insumo, int id_pedido, decimal cantidad)
         {
-            this.Id_sobrantes = id_sobrantes;
+            this.Id_sobrante = id_sobrante;
             this.Id_insumo = id_insumo;
             this.Id_pedido = id_pedido;
             this.Cantidad = cantidad;
@@ -168,7 +168,7 @@ namespace CapaDatos
                 SqlParameter ParId_Sobrante = new SqlParameter();
                 ParId_Sobrante.ParameterName = "@id_sobrante";
                 ParId_Sobrante.SqlDbType = SqlDbType.Int;
-                ParId_Sobrante.Value = Sobrantes.Id_sobrantes;
+                ParId_Sobrante.Value = Sobrantes.Id_sobrante;
                 SqlCmd.Parameters.Add(ParId_Sobrante);
 
                 SqlParameter ParId_Insumo = new SqlParameter();
@@ -231,7 +231,7 @@ namespace CapaDatos
                 SqlParameter ParId_Sobrante = new SqlParameter();
                 ParId_Sobrante.ParameterName = "@id_sobrante";
                 ParId_Sobrante.SqlDbType = SqlDbType.Int;
-                ParId_Sobrante.Value = Sobrantes.Id_sobrantes;
+                ParId_Sobrante.Value = Sobrantes.Id_sobrante;
                 SqlCmd.Parameters.Add(ParId_Sobrante);
 
                 rpta = SqlCmd.ExecuteNonQuery() == 1 ? "OK" : "NO SE HA ELIMINADO EL REGISTRO";

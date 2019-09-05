@@ -66,6 +66,7 @@
     <Compile Include="NProvincia.cs" />
     <Compile Include="NRecibo.cs" />
     <Compile Include="NSexo.cs" />
+    <Compile Include="NSobrantes.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
