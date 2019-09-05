@@ -8,7 +8,7 @@ using System.Data.SqlClient;
 
 namespace CapaDatos
 {
-    class DTipo_Factura
+    public class DTipo_Factura
     {//inicio clase
         private int _Id_tipo_factura;
         private string _Tipo_factura;
@@ -41,12 +41,12 @@ namespace CapaDatos
         #endregion Propiedades
 
         #region Constructores
-        DTipo_Factura()
+        public DTipo_Factura()
         {
 
         }
 
-        DTipo_Factura(int id_tipo_factura, string tipo_factura)
+        public DTipo_Factura(int id_tipo_factura, string tipo_factura)
         {
             this.Id_tipo_factura = id_tipo_factura;
             this.Tipo_factura = tipo_factura;
