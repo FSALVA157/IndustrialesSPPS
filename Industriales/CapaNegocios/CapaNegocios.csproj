@@ -65,6 +65,7 @@
     <Compile Include="NProveedor.cs" />
     <Compile Include="NProvincia.cs" />
     <Compile Include="NRecibo.cs" />
+    <Compile Include="NSexo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
