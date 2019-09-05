@@ -8,7 +8,7 @@ using System.Data.SqlClient;
 
 namespace CapaDatos
 {
-    class DRecibo
+    public class DRecibo
     {//inicio clase
         private int _Id_recibo;
         private int _Numero_recibo;
@@ -83,12 +83,12 @@ namespace CapaDatos
         #endregion Propiedades
 
         #region Propiedades
-        DRecibo()
+        public DRecibo()
         {
 
         }
 
-        DRecibo(int id_recibo, int numero_recibo, DateTime fecha_recibo, int id_taller, string personal_recibe)
+        public DRecibo(int id_recibo, int numero_recibo, DateTime fecha_recibo, int id_taller, string personal_recibe)
         {
             this.Id_recibo = id_recibo;
             this.Numero_recibo = numero_recibo;
