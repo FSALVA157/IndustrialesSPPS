@@ -8,7 +8,7 @@ using System.Data.SqlClient;
 
 namespace CapaDatos
 {
-    class DTipo_Pago
+    public class DTipo_Pago
     {//inicio de clase
         private int _Id_tipo_pago;
         private string _Tipo_pago;
@@ -41,12 +41,12 @@ namespace CapaDatos
         #endregion Propiedades
 
         #region Constructores
-        DTipo_Pago()
+        public DTipo_Pago()
         {
 
         }
 
-        DTipo_Pago(int id_tipo_pago, string tipo_pago)
+        public DTipo_Pago(int id_tipo_pago, string tipo_pago)
         {
             this.Id_tipo_pago = id_tipo_pago;
             this.Tipo_pago = tipo_pago;
