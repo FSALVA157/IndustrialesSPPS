@@ -8,7 +8,7 @@ using System.Data.SqlClient;
 
 namespace CapaDatos
 {
-    class DUnidad_Medida
+    public class DUnidad_Medida
     {//inicio de clase
         private int _Id_unidad_medida;
         private string _Descripcion;
@@ -41,12 +41,12 @@ namespace CapaDatos
         #endregion Propiedades
 
         #region Constructores
-        DUnidad_Medida()
+        public DUnidad_Medida()
         {
 
         }
 
-        DUnidad_Medida(int id_unidad_medida, string descripcion)
+        public DUnidad_Medida(int id_unidad_medida, string descripcion)
         {
             this.Id_unidad_medida = id_unidad_medida;
             this.Descripcion = descripcion;
