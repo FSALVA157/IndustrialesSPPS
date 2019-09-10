@@ -64,6 +64,14 @@
     <Compile Include="NProducto.cs" />
     <Compile Include="NProveedor.cs" />
     <Compile Include="NProvincia.cs" />
+    <Compile Include="NRecibo.cs" />
+    <Compile Include="NSexo.cs" />
+    <Compile Include="NSobrantes.cs" />
+    <Compile Include="NTaller.cs" />
+    <Compile Include="NTipo_Cliente.cs" />
+    <Compile Include="NTipo_Factura.cs" />
+    <Compile Include="NTipo_Pago.cs" />
+    <Compile Include="NUnidad_Medida.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

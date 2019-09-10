@@ -8,7 +8,7 @@ using System.Data.SqlClient;
 
 namespace CapaDatos
 {
-    class DSexo
+    public class DSexo
     {//inicio capa
         private int _Id_sexo;
         private string _Sexo;
@@ -41,12 +41,12 @@ namespace CapaDatos
         #endregion Propiedades
 
         #region Consrtuctores
-        DSexo()
+        public DSexo()
         {
 
         }
 
-        DSexo(int id_sexo, string sexo)
+        public DSexo(int id_sexo, string sexo)
         {
             this.Id_sexo = id_sexo;
             this.Sexo = sexo;

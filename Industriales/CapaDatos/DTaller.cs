@@ -8,7 +8,7 @@ using System.Data.SqlClient;
 
 namespace CapaDatos
 {
-    class DTaller
+    public class DTaller
     {//inicio de clase
         private int _Id_taller;
         private string _Denominacion;
@@ -41,12 +41,12 @@ namespace CapaDatos
         #endregion Propiedades
 
         #region Constructores
-        DTaller()
+        public DTaller()
         {
 
         }
 
-        DTaller(int id_taller, string denominacion)
+        public DTaller(int id_taller, string denominacion)
         {
             this.Id_taller = id_taller;
             this.Denominacion = denominacion;
