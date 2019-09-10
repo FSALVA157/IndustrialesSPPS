@@ -14,6 +14,5 @@ D:\GITHUB_REPOSITORIOS_2019\IndustrialesSPPS\Industriales\CapaDatos\obj\Debug\Ca
 D:\GITHUB_2019\IndustrialesSPPS\Industriales\CapaDatos\bin\Debug\CapaDatos.dll.config
 D:\GITHUB_2019\IndustrialesSPPS\Industriales\CapaDatos\bin\Debug\CapaDatos.dll
 D:\GITHUB_2019\IndustrialesSPPS\Industriales\CapaDatos\bin\Debug\CapaDatos.pdb
-D:\GITHUB_2019\IndustrialesSPPS\Industriales\CapaDatos\obj\Debug\CapaDatos.csprojResolveAssemblyReference.cache
 D:\GITHUB_2019\IndustrialesSPPS\Industriales\CapaDatos\obj\Debug\CapaDatos.dll
 D:\GITHUB_2019\IndustrialesSPPS\Industriales\CapaDatos\obj\Debug\CapaDatos.pdb
