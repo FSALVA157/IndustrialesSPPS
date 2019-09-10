@@ -4,6 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using CapaPresentacion;
+using System.Windows.Forms;
+
 
 namespace SistLiqHaberes
 {
@@ -15,9 +17,9 @@ namespace SistLiqHaberes
         [STAThread]
         static void Main()
         {
-            //Application.EnableVisualStyles();
-            //Application.SetCompatibleTextRenderingDefault(false);
-            //Application.Run(new FrmProducto());
+            Application.EnableVisualStyles();
+            Application.SetCompatibleTextRenderingDefault(false);
+            Application.Run(new FrmProducto());
         }
     }
 }

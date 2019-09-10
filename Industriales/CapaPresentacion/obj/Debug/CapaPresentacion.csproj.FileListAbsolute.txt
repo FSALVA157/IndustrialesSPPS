@@ -7,8 +7,6 @@ D:\GITHUB_PROYECTOS_2019\INDUSTRIALES\IndustrialesSPPS\Industriales\CapaPresenta
 D:\GITHUB_PROYECTOS_2019\INDUSTRIALES\IndustrialesSPPS\Industriales\CapaPresentacion\obj\Debug\CapaPresentacion.csprojResolveAssemblyReference.cache
 D:\GITHUB_PROYECTOS_2019\INDUSTRIALES\IndustrialesSPPS\Industriales\CapaPresentacion\obj\Debug\CapaPresentacion.dll
 D:\GITHUB_PROYECTOS_2019\INDUSTRIALES\IndustrialesSPPS\Industriales\CapaPresentacion\obj\Debug\CapaPresentacion.pdb
-D:\GITHUB_PROYECTOS_2019\INDUSTRIALES\IndustrialesSPPS\Industriales\CapaPresentacion\bin\Debug\CapaPresentacion.dll.CodeAnalysisLog.xml
-D:\GITHUB_PROYECTOS_2019\INDUSTRIALES\IndustrialesSPPS\Industriales\CapaPresentacion\bin\Debug\CapaPresentacion.dll.lastcodeanalysissucceeded
 D:\GITHUB_REPOSITORIOS_2019\IndustrialesSPPS\Industriales\CapaPresentacion\bin\Debug\CapaPresentacion.dll
 D:\GITHUB_REPOSITORIOS_2019\IndustrialesSPPS\Industriales\CapaPresentacion\bin\Debug\CapaPresentacion.pdb
 D:\GITHUB_REPOSITORIOS_2019\IndustrialesSPPS\Industriales\CapaPresentacion\bin\Debug\CapaDatos.dll
@@ -29,3 +27,5 @@ D:\GITHUB_2019\IndustrialesSPPS\Industriales\CapaPresentacion\obj\Debug\CapaPres
 D:\GITHUB_2019\IndustrialesSPPS\Industriales\CapaPresentacion\obj\Debug\CapaPresentacion.csproj.GenerateResource.Cache
 D:\GITHUB_2019\IndustrialesSPPS\Industriales\CapaPresentacion\obj\Debug\CapaPresentacion.dll
 D:\GITHUB_2019\IndustrialesSPPS\Industriales\CapaPresentacion\obj\Debug\CapaPresentacion.pdb
+D:\GITHUB_PROYECTOS_2019\INDUSTRIALES\IndustrialesSPPS\Industriales\CapaPresentacion\obj\Debug\CapaPresentacion.FrmProducto.resources
+D:\GITHUB_PROYECTOS_2019\INDUSTRIALES\IndustrialesSPPS\Industriales\CapaPresentacion\obj\Debug\CapaPresentacion.csproj.GenerateResource.Cache

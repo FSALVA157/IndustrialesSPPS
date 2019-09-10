@@ -1,9 +1,5 @@
-D:\GITHUB_PROYECTOS_2019\INDUSTRIALES\IndustrialesSPPS\Industriales\Industriales\bin\Debug\Industriales.dll
 D:\GITHUB_PROYECTOS_2019\INDUSTRIALES\IndustrialesSPPS\Industriales\Industriales\bin\Debug\Industriales.pdb
-D:\GITHUB_PROYECTOS_2019\INDUSTRIALES\IndustrialesSPPS\Industriales\Industriales\obj\Debug\Industriales.dll
 D:\GITHUB_PROYECTOS_2019\INDUSTRIALES\IndustrialesSPPS\Industriales\Industriales\obj\Debug\Industriales.pdb
-D:\GITHUB_PROYECTOS_2019\INDUSTRIALES\IndustrialesSPPS\Industriales\Industriales\bin\Debug\Industriales.dll.CodeAnalysisLog.xml
-D:\GITHUB_PROYECTOS_2019\INDUSTRIALES\IndustrialesSPPS\Industriales\Industriales\bin\Debug\Industriales.dll.lastcodeanalysissucceeded
 D:\GITHUB_REPOSITORIOS_2019\IndustrialesSPPS\Industriales\Industriales\bin\Debug\Industriales.dll
 D:\GITHUB_REPOSITORIOS_2019\IndustrialesSPPS\Industriales\Industriales\bin\Debug\Industriales.pdb
 D:\GITHUB_REPOSITORIOS_2019\IndustrialesSPPS\Industriales\Industriales\obj\Debug\Industriales.csprojResolveAssemblyReference.cache
@@ -23,3 +19,11 @@ D:\GITHUB_2019\IndustrialesSPPS\Industriales\Industriales\obj\Debug\Industriales
 D:\GITHUB_2019\IndustrialesSPPS\Industriales\Industriales\bin\Debug\Industriales.exe.config
 D:\GITHUB_PROYECTOS_2019\INDUSTRIALES\IndustrialesSPPS\Industriales\Industriales\bin\Debug\Industriales.exe.config
 D:\GITHUB_PROYECTOS_2019\INDUSTRIALES\IndustrialesSPPS\Industriales\Industriales\obj\Debug\Industriales.exe
+D:\GITHUB_PROYECTOS_2019\INDUSTRIALES\IndustrialesSPPS\Industriales\Industriales\bin\Debug\Industriales.exe
+D:\GITHUB_PROYECTOS_2019\INDUSTRIALES\IndustrialesSPPS\Industriales\Industriales\bin\Debug\CapaPresentacion.dll
+D:\GITHUB_PROYECTOS_2019\INDUSTRIALES\IndustrialesSPPS\Industriales\Industriales\bin\Debug\CapaNegocios.dll
+D:\GITHUB_PROYECTOS_2019\INDUSTRIALES\IndustrialesSPPS\Industriales\Industriales\bin\Debug\CapaDatos.dll
+D:\GITHUB_PROYECTOS_2019\INDUSTRIALES\IndustrialesSPPS\Industriales\Industriales\bin\Debug\CapaPresentacion.pdb
+D:\GITHUB_PROYECTOS_2019\INDUSTRIALES\IndustrialesSPPS\Industriales\Industriales\bin\Debug\CapaNegocios.pdb
+D:\GITHUB_PROYECTOS_2019\INDUSTRIALES\IndustrialesSPPS\Industriales\Industriales\bin\Debug\CapaDatos.pdb
+D:\GITHUB_PROYECTOS_2019\INDUSTRIALES\IndustrialesSPPS\Industriales\Industriales\obj\Debug\Industriales.csprojResolveAssemblyReference.cache
