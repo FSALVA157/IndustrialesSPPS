@@ -21,3 +21,5 @@ D:\GITHUB_2019\IndustrialesSPPS\Industriales\Industriales\bin\Debug\CapaDatos.pd
 D:\GITHUB_2019\IndustrialesSPPS\Industriales\Industriales\obj\Debug\Industriales.exe
 D:\GITHUB_2019\IndustrialesSPPS\Industriales\Industriales\obj\Debug\Industriales.pdb
 D:\GITHUB_2019\IndustrialesSPPS\Industriales\Industriales\bin\Debug\Industriales.exe.config
+D:\GITHUB_PROYECTOS_2019\INDUSTRIALES\IndustrialesSPPS\Industriales\Industriales\bin\Debug\Industriales.exe.config
+D:\GITHUB_PROYECTOS_2019\INDUSTRIALES\IndustrialesSPPS\Industriales\Industriales\obj\Debug\Industriales.exe
